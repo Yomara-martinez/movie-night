@@ -14,9 +14,11 @@ export default function App() {
     
     const [movies, setMovies] = useState(initialMovies);
 
+    
   return (
-    <div>
 
+    <div>
+        <h1>Movie Night</h1>
     </div>
   )
 }
