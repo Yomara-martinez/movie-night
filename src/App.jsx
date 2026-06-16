@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import MovieCard from "./MovieCard.jsx";
 
 const initialMovies = [
   { id: 1, title: "The Matrix", genre: "Sci-Fi", year: 1999, watched: false },
@@ -24,8 +25,9 @@ export default function App() {
       <h1>Movie Night</h1>
 
       {movies.map((movie) => (
-        <div key={movie.id}> {movie.title}: {movie.genre}: {movie.year}: {movie.watched}</div>
+        <MovieCard key={movie.id} movie={movie}> </MovieCard>
       ))}
     </div>
   );
 }
+
